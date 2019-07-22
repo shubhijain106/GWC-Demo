@@ -1,0 +1,68 @@
+body{
+    width:100%;
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif
+
+}
+
+.bold{
+    font-weight: 700;
+}
+flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phone-screen{
+    width: 414px;
+    height: 736px;
+    border: 2px solid grey;
+}
+h3 {
+    color: black;
+    font: bold 150% Arial, Times, serif, Courier, monospace
+}
+.payment-header {
+    padding: 0% 0% 5% 3%;
+}
+
+.index2-icon-containers {
+    padding-top: 8%;
+    padding-left: 2%
+}
+.payment {
+   padding-top: 0% 
+}
+.index2-icons {
+    width: 39%
+}
+#left-arrow-icon{
+    padding-right: 83%;
+    width: 5%;
+}
+
+#cross-icon {
+    width: 5%;
+}
+.Pay-pal{
+    padding: .5rem 13% 0% 13%;
+}
+
+.Credit-card {
+    padding-left: 12%
+}
+.div-icon {
+    border: 1px rgba(173, 173, 173, 0.739) solid;
+    margin-bottom: .7rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#Payment-methods {
+    padding-left: 5%;
+    padding-right: 5%
+}
+.Paypal-button-style {
+    background-color: white
+}
