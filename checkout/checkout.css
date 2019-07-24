@@ -1,0 +1,118 @@
+body{
+    width:100%;
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif
+}
+
+.bold{
+    font-weight: 900;
+}
+.phone-screen{
+    width: 414px;
+    height: 736px;
+    border: 2px solid grey;
+}
+.index2-icon-containers {
+    padding-top: 8%;
+    padding-left: 2%
+}
+#left-arrow-icon{
+    padding-right: 83%;
+    width: 5%;
+}
+
+#cross-icon {
+    width: 5%;
+}
+h3 {
+    color: black;
+    font: bold 150% Arial, Times, serif, Courier, monospace
+}
+.grey-font {
+    color: #CECECE; 
+}
+.shoe-preview-div{
+    display:flex;
+    margin-top:5%
+}
+.word-padding{
+    padding-top:5px;
+    padding-bottom:1px;
+}
+
+#shoe-preview-selection{
+   margin-left:13%
+}
+#shoe-preview-image{
+    display: inline-flex;
+    width:27%;
+    padding:5px;
+}
+#main-shoe-image-payment{
+    padding-left: 3%;
+    width:120px;
+    height:120px;
+    display:flex
+}
+.checkout-header-div{
+    margin-top:7%
+}
+.checkout-header{
+    padding-left:3%;
+    margin-bottom:0
+}
+.line-divider {
+    border: 1px solid gainsboro;
+    margin-top:7%
+}
+.white-space{
+    border: 5px solid white;
+}
+.paypal-info-div{
+    margin-right:18%
+}
+.payment-information-div{
+    margin-bottom:8%;
+    margin-top:8%
+}
+.checkmark-container, .right-arrow-div{
+   height: 50%; 
+   width: 8%;
+}
+
+.left{
+    margin-left: 5%;
+    float:left;
+}
+.right{
+    margin-right: 5%;
+    float:right;
+    text-align: right
+}
+.unpopulated{
+    text-align:center; 
+    height:90%;
+    width: 100%; 
+    background-color: rgb(229, 229, 229); 
+    position: relative
+}
+.populated{
+    text-align:center; 
+    height:90%;
+    width: 100%; 
+    background-color: #1492ED; 
+    position: relative
+}
+.unpopulated-text{
+visibility: hidden;
+}
+.populated-text{
+visibility: visible
+}
+.home-navigation-bar{
+    margin-top: 10%;
+    margin-left: 36%;
+  }
+  .address{
+    margin-left:5%;
+  }
