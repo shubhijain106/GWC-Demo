@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Payment Screen</title>
-    <link href="./payment-selection.css" rel="stylesheet" type="text/css"></link>
-    <link href="../global_styles.css" rel="stylesheet" type="text/css"></link>
-    <link href="../font.css" rel="stylesheet" type="text/css"></link>
+    <link href="./payment-selection.css" rel="stylesheet" type="text/css">
+    <link href="../global_styles.css" rel="stylesheet" type="text/css">
+    <link href="../font.css" rel="stylesheet" type="text/css">
 </head>
-<flexbox>
- <body>
-     <div class="phone-screen">
+<body class="flexbox">
+    <div class="phone-screen">
         <div class="index2-icon-containers">
             <span onclick="location.href='../shoe-selection/shoe-selection.html'">
                 <img id="left-arrow-icon" src="../assets/left-arrow-icon2.png" alt="arrow-left-icon" width= 3%/>
@@ -20,30 +19,35 @@
                 <img id="cross-icon" src="../assets/cross-icon2.png" alt="cross-icon" width= 3%/>
             </span>
         </div>
+        <!-- header start -->
         <div class="payment">
-            <h3 class="payment-header">Payment</h3>
+            <h2 class="header">Payment</h2>
         </div>
+        <!-- header end -->
+        <!-- options container start -->
+        <!-- EXERCISE 4: Add class so that all 3 payment-options look same. (Hint): Refer to other options and find class name in payment-selection.css -->
         <div id="Payment-methods">
-            <div class="div-icon">
+            <div class="payment-option">
                 <img src="../assets/Apple-Pay.png" alt="Apple-Pay" width= 45%/> 
             </div>
-            <div class="div-icon" onclick="populatePayment()">
+            <div class="payment-option" onclick="populatePayment()">
                 <img class="Pay-pal" src="../assets/paypal-logo.png" alt="Pay-Pal" width= 40%/>
             </div>
-            <div class="div-icon">
+            <div>
                 <img src="../assets/CreditCardLogos.png" alt="Credit Card" width= 80%/>
             </div>
         </div>
+        <!-- options container end -->
         <div class="home-navigation-bar">
             <span class="left-circle"></span>
             <span class="bottom-iphone-bar"></span>
             <span class="right-circle"></span>
         </div>
     </div>
- </body>
- <script>
- function populatePayment(){
-   location.href="../checkout/checkout.html?payment"
-    }
- </script>   
-</flexbox>
+</body>
+<script>
+function populatePayment(){
+location.href="../checkout/checkout.html?payment"
+}
+</script>  
+</html> 

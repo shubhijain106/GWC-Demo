@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Checkout Pre Payment</title>
-    <link href="./checkout.css" rel="stylesheet" type="text/css"></link>
-    <link href="../global_styles.css" rel="stylesheet" type="text/css"></link>
-    <link href="../font.css" rel="stylesheet" type="text/css"></link>
+    <link href="./checkout.css" rel="stylesheet" type="text/css">
+    <link href="../global_styles.css" rel="stylesheet" type="text/css">
+    <link href="../font.css" rel="stylesheet" type="text/css">
 </head>
-<flexbox>
-    <body>
+    <body class="flexbox">
         <div class="phone-screen">
+            <!-- header start -->
+            <!-- EXERCISE 2: Add class to apply style to header. (Hint): refer to payment page, the header there looks same too -->
             <div class="checkout-header-div">
-                <div>
-                    <h2 class="checkout-header" style="font-weight: 900">Guest Checkout</h2>
+                    <span >Guest Checkout</span>
                     <span class="grey-font checkout-header" >1 Item</span>
                 </div>
-            </div>
             <br>
+            <!-- header end -->
+            <!-- checkout upper container start -->
             <div class="shoe-preview-div">
                 <div id="shoe-preview-image">
                     <img src="../assets/black-shoe.png" alt="black and white shoe" width="130%" style="margin-top:-2rem"/>
@@ -41,8 +42,10 @@
             </div>
             <br>
             <div class="line-divider"></div>
-           <br>
-           <br>
+            <br>
+            <br>
+            <!-- checkout upper container end -->
+            <!-- checkout price summary start -->
             <div class="payment-information-div">
                 <div class="left">
                     <div class="bold">Summary</div>
@@ -67,13 +70,15 @@
                 <br>
             </div>
             <br>
+            <!-- checkout price summary end -->
+            <!-- shipping and payment button container start -->
             <div class="all-buttons-container">
                 <div class="button-container secondary-button">
                     <div class= "checkmark-container" >
                         <img src="../assets/iconfinder_basics-21_296813.svg" alt="checkmark" width="100%" height="30px"/>
                     </div>
                     <div>
-                        <div class="bold grey-font header-size">SHIPPING</div>
+                        <div class="bold header-size">SHIPPING</div>
                         <div class="word-padding">Jane Smith</div> 
                     </div>
                     <div class="address">
@@ -90,7 +95,7 @@
                         <img src="../assets/iconfinder_basics-21_296813.svg" alt="checkmark" width="100%" height="30px"/>
                     </div>
                     <div class="paypal-info-div">
-                        <div class="bold grey-font header-size">PAYMENT</div>
+                        <div id="payment-header" class="bold grey-font header-size">PAYMENT</div>
                         <div id="paypal-info" class="unpopulated-text word-padding">Paypal - janesmith@gmail.com</div>
                     </div>
                     <div class="right-arrow-div">
@@ -98,12 +103,12 @@
                     </div>
                 </div>
                 <div class="white-space"></div>
+                <!-- EXERCISE 3: Add class to apply style to button. (Hint): find class name in global_styles.css -->
                 <div class="button-container">
-                    <div id="purchase-button" class="unpopulated">
-                        <div style="top:50%; bottom:50%; transform:translate(-50%,-50%); position:absolute; display: inline-table; color: white;"><span class="bold header-size">PURCHASE</span></div>
-                    </div>
+                    <button >PURCHASE</button>
                 </div>
             </div>
+            <!-- shipping and payment button container end -->
             <div class="home-navigation-bar">
                 <span class="left-circle"></span>
                 <span class="bottom-iphone-bar"></span>
@@ -112,17 +117,14 @@
         </div>
     </body>
     <script>
-    console.log(window.location.href)
+        document.querySelector("button").disabled = true;
     if(window.location.href.split('?')[1]==='payment'){
-    var popButton = document.getElementById("purchase-button");
-    popButton.classList.remove("unpopulated");
-    popButton.classList.add("populated");
-    
     var payment = document.getElementById("paypal-info");
     payment.classList.remove("unpopulated-text")
     payment.classList.add("populated-text")
+    var payment = document.getElementById("payment-header");
+    payment.classList.remove("grey-font");
+    document.querySelector("button").disabled = false;
     }
 
     </script>
-
-</flexbox>

@@ -1,13 +1,11 @@
-.payment-header {
-    padding: 0% 0% 5% 8%;
-}
 
 .index2-icon-containers {
     padding-top: 8%;
     padding-left: 2%
 }
 .payment {
-   padding-top: 0% 
+   padding-top: 0% ;
+   padding-bottom:8%;
 }
 .index2-icons {
     width: 39%
@@ -24,8 +22,7 @@
 .Pay-pal{
     padding: .5rem 13% 0% 13%;
 }
-
-.div-icon {
+.payment-option {
     border: 1px rgba(173, 173, 173, 0.739) solid;
     margin-bottom: .7rem;
     height: 70px;
