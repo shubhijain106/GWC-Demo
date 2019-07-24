@@ -55,7 +55,9 @@ h3 {
     display:flex
 }
 .checkout-header-div{
-    margin-top:7%
+    margin-top:7%;
+    flex-direction:column;
+    display:flex;
 }
 .checkout-header{
     padding-left:3%;
